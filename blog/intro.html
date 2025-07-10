@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Introduction to Candy | Candy Blog</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1a001f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 1rem;
+    }
+
+    a {
+      color: #d36aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #2b0033;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #d36aff;
+      font-size: 2.2rem;
+    }
+
+    .author-info {
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      color: #bb77ffcc;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .author-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #bb77ffaa;
+      background-color: #3a0040;
+    }
+
+    footer {
+      background: #2b0033;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin: 0;
+      color: #d36aff;
+    }
+
+    article {
+      background: #2b0033;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    article h1 {
+      margin-top: 0;
+      color: #d36aff;
+      font-size: 2rem;
+    }
+
+    article time {
+      display: block;
+      margin-bottom: 1.5rem;
+      color: #a47be0;
+      font-size: 0.9rem;
+    }
+
+    article p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    article h2 {
+      color: #bb77ff;
+      margin-top: 2rem;
+    }
+
+    /* Feature boxスタイル */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-box {
+      background: #3a0040;
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      fill: #d36aff;
+    }
+
+    .feature-text {
+      font-size: 1.05rem;
+      color: #eee;
+    }
+
+    article ul {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    article .note {
+      background-color: #3a0040;
+      border-left: 5px solid #d36aff;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0 1.5rem 0;
+      border-radius: 8px;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    nav {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    nav a {
+      background: #d36aff;
+      color: #1a001f;
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #bb5eed;
+    }
+
+    footer a {
+      color: #d36aff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Candy</h1>
+  <div class="author-info">
+    <img src="https://avatars.githubusercontent.com/u/213444273?v=4" alt="Author Icon" />
+    <span>Candy developer</span>
+  </div>
+</header>
+
+<main>
+  <article>
+    <h1>Introduction to Candy</h1>
+    <time datetime="2025-06-01">Published on June 1, 2025</time>
+
+    <p>Candy is a sweet and simple info gathering tool designed to collect Telegram sessions, Discord data, screenshots, and system info efficiently.</p>
+
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zM4 20v-1c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1H4z"/></svg>
+        <div class="feature-text">Telegram Session</div>
+      </div>
+      <div class="feature-box">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h12v2H3v-2z"/></svg>
+        <div class="feature-text">Discord Account (Token, E-mail, Phone)</div>
+      </div>
+      <div class="feature-box">
+        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 3H3v18h18V3zM5 19V5h14v14H5z"/></svg>
+        <div class="feature-text">Screenshot + System Info</div>
+      </div>
+    </div>
+
+    <h2>Installation</h2>
+
+    <h3>System Requirements</h3>
+    <ul>
+      <li>Python 3.12.x</li>
+      <li>Git</li>
+      <li>Windows 10-11</li>
+      <li>RAM 8+</li>
+    </ul>
+
+    <div class="note">
+      <strong>Note</strong><br />
+      Having trouble reading? Then the developer has a tutorial video for you. You can access them by <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">click here</a>.
+    </div>
+
+    <div class="note">
+      <strong>Note</strong><br />
+      Did an error occur? If you have a GitHub account, please consider opening an issue. We’ll do our best to improve.
+    </div>
+
+    <h3>Installation Tutorial</h3>
+    <p>To get started, <a href="https://github.com/doxinggirl/Candy/archive/refs/heads/main.zip" target="_blank" rel="noopener noreferrer">click here</a> to download the ZIP file.</p>
+    <p>After downloading the ZIP file, extract it and run <code>run.bat</code>. Everything else will install automatically.</p>
+    <p>Enjoy &gt;:)</p>
+
+    <nav>
+      <a href="index.html">← Back to Blog Home</a>
+    </nav>
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 Doxing/Candy | <a href="https://github.com/doxinggirl/Candy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+</footer>
+
+</body>
+</html>
