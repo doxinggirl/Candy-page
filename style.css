@@ -1,0 +1,83 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: linear-gradient(to right, #6a0572, #ab83a1);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 3rem;
+  background: #3a0144;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+header a {
+  color: #ffb3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #2b0033;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #000;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+}
+
+input#searchInput {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background: #440a57;
+  color: #fff;
+}
+
+ul#results li a {
+  display: block;
+  padding: 0.5rem;
+  background: #661177;
+  border-radius: 0.4rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul#results li a:hover {
+  background: #8a2c9c;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3a0144;
+  font-size: 0.9rem;
+}
